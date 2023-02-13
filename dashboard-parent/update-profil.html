@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-cel-copy.png" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/main-parent.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__logo">
+            <img src="../images/logo-cel.png" alt="logo site" class="img-fluid" />
+        </div>
+        <ul class="sidebar__box-link">
+            <li>
+                <a href="index.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/home.svg" alt="home">
+                        </span>
+                        <span class="title">Tableau de bord</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="liste-enfant.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/children.svg" alt="gestion">
+                        </span>
+                        <span class="title">Liste des enfants</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="composition.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/compo.svg" alt="compo">
+                        </span>
+                        <span class="title">Composition</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="gestion-enfant.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/gestion.svg" alt="gestion">
+                        </span>
+                        <span class="title">Gestion des comptes</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="compte.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/account.svg" alt="account">
+                        </span>
+                        <span class="title">Compte CELPAY</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="demande.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/demande.svg" alt="demande">
+                        </span>
+                        <span class="title">Faire une demande</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="conversation.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/chat.svg" alt="tchat">
+                        </span>
+                        <span class="title">CELChat</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="document.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/documents.svg" alt="documents">
+                        </span>
+                        <span class="title">Documents</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+
+        <!-- top bar -->
+        <div class="page-wrapper__topbar">
+            <div class="page-wrapper__topbar--btn" onclick="toggleSidebar()">
+                <img src="../images/menu.svg" alt="sidebar btn" class="iconOpen">
+                <img src="../images/close.svg" alt="sidebar btn" class="iconClose">
+            </div>
+            <div class="page-wrapper__topbar--linkRight">
+                <div class="language">
+                    <img src="../images/fr.svg" alt="fr" id="imageBox">
+                    <div class="box-lang">
+                        <div class="box-lang__item">
+                            <div class="logo-drapeau">
+                                <img src="../images/fr.svg" alt="fr" onclick="changeLanguage(this)">
+                            </div>
+                            <span class="language-country" onclick="addIcon(this)">Français</span>
+                        </div>
+                        <div class="box-lang__item">
+                            <span class="logo-drapeau">
+                                <img src="../images/gb.svg" alt="en" onclick="changeLanguage(this)">
+                            </span>
+                            <span class="language-country" onclick="addIcon(this)">Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="notification.html">
+                    <div class="notification">
+                        <div class="account">50</div>
+                        <img src="../images/notify.svg" alt="">
+                    </div>
+                </a>
+                <div class="box-user">
+                    <span class="name">Elidje Hoba Nick Jefferson</span>
+                    <div class="user">
+                        <img src="../images/user_image1.png" alt="photo">
+                    </div>
+                    <div class="user-link">
+                        <a href="profil.html" class="link"><i class="fa fa-user" aria-hidden="true"></i>Profil</a>
+                        <a href="update-profil.html" class="link"><i class="fa fa-cogs" aria-hidden="true"></i>Paramètre</a>
+                        <a href="#" class="link"><i class="fa fa-globe" aria-hidden="true"></i>Aller sur le site</a>
+                        <hr class="underline" />
+                        <a href="#" class="link"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page content -->
+        <div class="page-wrapper__page-content">
+            <div class="main-content">
+                <div class="profil">
+                    <div class="dash-heading mb-5">
+                        <ul class="my-breadcrumb">
+                            <li><a href="index.html">Tableau de bord</a></li>
+                            <li class="spacing">&#8722;</li>
+                            <li><a href="profil.html">Profil</a></li>
+                            <li class="spacing">&#8722;</li>
+                            <li><span>Paramètre</span></li>
+                        </ul>
+                        <h3 class="title">Paramètre</h3>
+                    </div>
+                    <div class="box-update-profil">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="tabs1-tab" data-toggle="pill" href="#tabs1" role="tab" aria-controls="tabs1" aria-selected="true">&#10070; Informations générales</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="tabs2-tab" data-toggle="pill" href="#tabs2" role="tab" aria-controls="tabs2" aria-selected="false">&#10070; Mot de passe</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="tabs3-tab" data-toggle="pill" href="#tabs3" role="tab" aria-controls="tabs3" aria-selected="false">&#10070; Adresse E-mail</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="tabs1" role="tabpanel" aria-labelledby="tabs1-tab">
+                                        <div class="content">
+                                            <h2 class="title-content">Informations générales</h2>
+                                            <form action="" class="form-row form-update-profil">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="name">Nom & prénom(s)</label>
+                                                        <input type="text" name="name" id="name" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="genre">Genre</label>
+                                                        <div class="button-radio-form">
+                                                            <label class="radio">
+                                                                <input type="radio" value="masculin" name="sexe">
+                                                                <p class="paragraph">Masculin</p>
+                                                                <span></span>
+                                                            </label>
+                                                
+                                                            <label class="radio">
+                                                                <input type="radio" value="feminin" name="sexe">
+                                                                <p class="paragraph">Feminin</p>
+                                                                <span></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="tel">Téléphone</label>
+                                                        <input type="text" name="tel" id="tel" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="profession">Profession</label>
+                                                        <input type="text" name="profession" id="profession" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="children">Nombre d'enfant</label>
+                                                        <input type="number" name="children" id="children" min="1" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="birth">Date de naissance</label>
+                                                        <input type="text" name="birth" id="birth" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="country">Pays</label>
+                                                        <input type="text" name="country" id="country" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="city">Ville</label>
+                                                        <input type="text" name="city" id="city" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="common">Commune</label>
+                                                        <input type="text" name="common" id="common" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn-standard-2 mb-5">Sauvegarder</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabs2" role="tabpanel" aria-labelledby="tabs2-tab">
+                                        <div class="content">
+                                            <h2 class="title-content">Modification mot de passe</h2>
+                                            <form action="" class="form-row form-update-profil">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="password">Mot de passe actuel</label>
+                                                        <input type="password" name="password" id="password" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="newPassword">Nouveau mot de passe</label>
+                                                        <input type="password" name="newPassword" id="newPassword" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="form--group">
+                                                        <label for="confirmPassword">Confirmer le mot de passe</label>
+                                                        <input type="password" name="confirmPassword" id="confirmPassword" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn-standard-2 mb-5">Sauvegarder</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tabs3" role="tabpanel" aria-labelledby="tabs3-tab">
+                                        <div class="content">
+                                            <h2 class="title-content">Adresse E-mail</h2>
+                                            <form action="" class="form-row form-update-profil">
+                                                <div class="col-lg-8">
+                                                    <div class="form--group">
+                                                        <label for="email">Adresse E-mail</label>
+                                                        <input type="email" name="email" id="email" class="form--group__input">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn-standard-2 mb-5">Sauvegarder</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- script -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        // script img preview
+
+           function readURL(input) {
+               if (input.files && input.files[0]) {
+                   var reader = new FileReader();
+                   reader.onload = function (e) {
+                       $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                       $('#imagePreview').hide();
+                       $('#imagePreview').fadeIn(650);
+                   }
+                   reader.readAsDataURL(input.files[0]);
+               }
+           }
+           $("#imageUpload").change(function () {
+               readURL(this);
+           });
+   </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-cel-copy.png" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/main-parent.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__logo">
+            <img src="../images/logo-cel.png" alt="logo site" class="img-fluid" />
+        </div>
+        <ul class="sidebar__box-link">
+            <li>
+                <a href="index.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/home.svg" alt="home">
+                        </span>
+                        <span class="title">Tableau de bord</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="liste-enfant.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/children.svg" alt="gestion">
+                        </span>
+                        <span class="title">Liste des enfants</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="composition.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/compo.svg" alt="compo">
+                        </span>
+                        <span class="title">Composition</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="gestion-enfant.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/gestion.svg" alt="gestion">
+                        </span>
+                        <span class="title">Gestion des comptes</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="compte.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/account.svg" alt="account">
+                        </span>
+                        <span class="title">Compte CELPAY</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="demande.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/demande.svg" alt="demande">
+                        </span>
+                        <span class="title">Faire une demande</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="conversation.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/chat.svg" alt="tchat">
+                        </span>
+                        <span class="title">CELChat</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="document.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/documents.svg" alt="documents">
+                        </span>
+                        <span class="title">Documents</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+
+        <!-- top bar -->
+        <div class="page-wrapper__topbar">
+            <div class="page-wrapper__topbar--btn" onclick="toggleSidebar()">
+                <img src="../images/menu.svg" alt="sidebar btn" class="iconOpen">
+                <img src="../images/close.svg" alt="sidebar btn" class="iconClose">
+            </div>
+            <div class="page-wrapper__topbar--linkRight">
+                <div class="language">
+                    <img src="../images/fr.svg" alt="fr" id="imageBox">
+                    <div class="box-lang">
+                        <div class="box-lang__item">
+                            <div class="logo-drapeau">
+                                <img src="../images/fr.svg" alt="fr" onclick="changeLanguage(this)">
+                            </div>
+                            <span class="language-country" onclick="addIcon(this)">Français</span>
+                        </div>
+                        <div class="box-lang__item">
+                            <span class="logo-drapeau">
+                                <img src="../images/gb.svg" alt="en" onclick="changeLanguage(this)">
+                            </span>
+                            <span class="language-country" onclick="addIcon(this)">Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="notification.html">
+                    <div class="notification">
+                        <div class="account">50</div>
+                        <img src="../images/notify.svg" alt="">
+                    </div>
+                </a>
+                <div class="box-user">
+                    <span class="name">Elidje Hoba Nick Jefferson</span>
+                    <div class="user">
+                        <img src="../images/user_image1.png" alt="photo">
+                    </div>
+                    <div class="user-link">
+                        <a href="profil.html" class="link"><i class="fa fa-user" aria-hidden="true"></i>Profil</a>
+                        <a href="update-profil.html" class="link"><i class="fa fa-cogs" aria-hidden="true"></i>Paramètre</a>
+                        <a href="#" class="link"><i class="fa fa-globe" aria-hidden="true"></i>Aller sur le site</a>
+                        <hr class="underline" />
+                        <a href="#" class="link"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page content -->
+        <div class="page-wrapper__page-content">
+            <div class="main-content">
+                <div class="profil">
+                    <div class="dash-heading mb-5">
+                        <ul class="my-breadcrumb">
+                            <li><a href="index.html">Tableau de bord</a></li>
+                            <li class="spacing">&#8722;</li>
+                            <li><span>Profil</span></li>
+                        </ul>
+                        <h3 class="title">Mon profil</h3>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="card-profil">
+                                <form>
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                            <label for="imageUpload"></label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview" style="background-image: url('images/user.svg');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h2 class="name">Elidje Hoba Nick Jefferson</h2>
+                                    <div class="text-center mt-4">
+                                        <button type="submit" class="btn-standard-dash --blue" style="width: 100%;">Valider</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="infor-perso">
+                                <h2 class="title-principal">Informations personnelles</h2>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Identifiant</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">00125</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Nom & prénom(s)</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Elidje Hoba Nick Jefferson</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">E-mail</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph --email">jeffersonelidje@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Genre</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Masculin</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Téléphone</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">01 01 01 01 01</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Profession</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Avocat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Nombre d'enfant</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Date de naissance</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">10/02/1988</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Pays</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Côte d'Ivoire</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Ville</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Abidjan</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="box-infor">
+                                            <h4 class="title">Commune</h4>
+                                            <div class="min-banner">
+                                                <p class="paragraph">Yopougon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="update-profil.html">
+                                    <button class="btn-standard-2 --right mb-5">Modifier mes informations</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- script -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        // script img preview
+
+           function readURL(input) {
+               if (input.files && input.files[0]) {
+                   var reader = new FileReader();
+                   reader.onload = function (e) {
+                       $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                       $('#imagePreview').hide();
+                       $('#imagePreview').fadeIn(650);
+                   }
+                   reader.readAsDataURL(input.files[0]);
+               }
+           }
+           $("#imageUpload").change(function () {
+               readURL(this);
+           });
+   </script>
+</body>
+</html>

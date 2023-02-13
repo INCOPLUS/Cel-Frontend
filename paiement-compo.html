@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-cel.png" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- datatable -->
+    <link rel="stylesheet" href="css/datatable/datatable.bootstrap.css">
+
+</head>
+<body>
+
+    <!-- banner top -->
+    <div class="banner-top">
+        <div class="container">
+            <div class="banner-top-content">
+                <p class="paragraph-site">
+                    <span
+                       class="txt-rotate"
+                       data-period="2000"
+                       data-rotate='[ " Lorem ipsum dolor sit amet consectetur adipisicing elit.", 
+                       "publicité 1.", "Lorem ipsum pub"]'>
+                    </span>
+                </p>
+                <div class="reseau-sociaux">
+                    <div class="language">
+                        <img src="images/fr.svg" alt="fr" id="imageBox">
+                        <div class="box-lang">
+                            <div class="box-lang__item">
+                                <div class="logo-drapeau">
+                                    <img src="images/fr.svg" alt="fr" onclick="changeLanguage(this)">
+                                </div>
+                                <span class="language-country" onclick="addIcon(this)">Français</span>
+                            </div>
+                            <div class="box-lang__item">
+                                <span class="logo-drapeau">
+                                    <img src="images/gb.svg" alt="en" onclick="changeLanguage(this)">
+                                </span>
+                                <span class="language-country" onclick="addIcon(this)">Anglais</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+    <div class="overlay">&nbsp;</div>
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation-content">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/logo-cel.png" alt="logo">
+                    </div>
+                </a>
+                <div class="menu">
+                    <ul class="list">
+                        <li class="list-item"><a href="index.html" class="list-item--link underline-animate">Accueil</a></li>
+                        <li class="list-item"><a href="about.html" class="list-item--link underline-animate">A propos</a></li>
+                        <li class="list-item"><a href="blogs.html" class="list-item--link underline-animate">Blogs</a></li>
+                        <li class="list-item"><a href="contact.html" class="list-item--link underline-animate">Contact</a></li>
+                    </ul>
+                    <div class="box-btn">
+                        <a href="login.html"><button class="btn-standard --blue">S'inscrire</button></a>
+                        <a href="#"><button class="btn-standard --red">Composer</button></a>
+                    </div>
+                    <div class="box-user">
+                        <span class="name">Elidje Hoba Nick Jefferson</span>
+                        <div class="user">
+                            <img src="images/user_image1.png" alt="photo">
+                        </div>
+                        <div class="user-link">
+                            <a href="#" class="link"><i class="fa fa-globe" aria-hidden="true"></i>Mon espace</a>
+                            <a href="profil.html" class="link"><i class="fa fa-user" aria-hidden="true"></i>Profil</a>
+                            <hr class="underline" />
+                            <a href="#" class="link"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icone-open">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="header --header-page">
+        <div class="header-caption">
+            <ul class="my-breadcrumb">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="spacing">&#8722;</li>
+                <li><a href="enseignement.html">Enseignement</a></li>
+                <li class="spacing">&#8722;</li>
+                <li><a href="composition.html">Composition</a></li>
+                <li class="spacing">&#8722;</li>
+                <li><a href="banquet-sujet.html">Sujets</a></li>
+                <li class="spacing">&#8722;</li>
+                <li><span>Panier</span></li>
+            </ul>
+            <h1 class="title">Panier</h1>
+        </div>
+        <div class="image"><img src="images/hero_area_image.png" alt="img"></div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="panier">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-8">
+                        <div class="box-panier">
+                            <div class="box-panier--content">
+                                <div class="top-element">
+                                    <div class="circle --blue">1</div>
+                                    <div class="circle --red">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Titre</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Type</h4>
+                                    <p class="paragraph-site">Interrogation</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Thème</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Leçon</h4>
+                                    <p class="paragraph-site">Leçon 1</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Matière</h4>
+                                    <p class="paragraph-site">Anglais</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Classe</h4>
+                                    <p class="paragraph-site">3eme</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Durée</h4>
+                                    <p class="paragraph-site">45 minutes</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Pays</h4>
+                                    <p class="paragraph-site">Côte d'ivoire</p>
+                                </div>
+                                <div class="sujet --red">
+                                    <h4>Prix</h4>
+                                    <p class="paragraph-site">1500 fcfa</p>
+                                </div>
+                            </div>
+                            <div class="box-panier--content">
+                                <div class="top-element">
+                                    <div class="circle --blue">2</div>
+                                    <div class="circle --red">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Titre</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Type</h4>
+                                    <p class="paragraph-site">Interrogation</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Thème</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Leçon</h4>
+                                    <p class="paragraph-site">Leçon 1</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Matière</h4>
+                                    <p class="paragraph-site">Anglais</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Classe</h4>
+                                    <p class="paragraph-site">3eme</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Durée</h4>
+                                    <p class="paragraph-site">45 minutes</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Pays</h4>
+                                    <p class="paragraph-site">Côte d'ivoire</p>
+                                </div>
+                                <div class="sujet --red">
+                                    <h4>Prix</h4>
+                                    <p class="paragraph-site">1600 fcfa</p>
+                                </div>
+                            </div>
+                            <div class="box-panier--content">
+                                <div class="top-element">
+                                    <div class="circle --blue">3</div>
+                                    <div class="circle --red">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Titre</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Type</h4>
+                                    <p class="paragraph-site">Interrogation</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Thème</h4>
+                                    <p class="paragraph-site">Lorem ipsum dolor sit</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Leçon</h4>
+                                    <p class="paragraph-site">Leçon 1</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Matière</h4>
+                                    <p class="paragraph-site">Anglais</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Classe</h4>
+                                    <p class="paragraph-site">3eme</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Durée</h4>
+                                    <p class="paragraph-site">45 minutes</p>
+                                </div>
+                                <div class="sujet">
+                                    <h4>Pays</h4>
+                                    <p class="paragraph-site">Côte d'ivoire</p>
+                                </div>
+                                <div class="sujet --red">
+                                    <h4>Prix</h4>
+                                    <p class="paragraph-site">600 fcfa</p>
+                                </div>
+                            </div>
+
+                            <!-- pagination -->
+                            <div class="my-pagination-site mt-5">
+                                <a href="#" class="btn-prev-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <div class="number">
+                                    <span><a href="#" class="active">1</a></span>
+                                    <span><a href="#">2</a></span>
+                                    <span>...</span>
+                                    <span><a href="#">6</a></span>
+                                </div>
+                                <a href="#" class="btn-prev-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="recap-panier">
+                            <h3 class="title">Panier</h3>
+                            <div class="recap-panier--content">
+                                <h4>Prix unitaire (<span>1</span>):</h4>
+                                <p class="paragraph-site">1500 fcfa</p>
+                            </div>
+                            <div class="recap-panier--content">
+                                <h4>Prix unitaire (<span>2</span>):</h4>
+                                <p class="paragraph-site">1600 fcfa</p>
+                            </div>
+                            <div class="recap-panier--content">
+                                <h4>Prix unitaire (<span>3</span>):</h4>
+                                <p class="paragraph-site">600 fcfa</p>
+                            </div>
+                            <div class="recap-panier--content --underline">
+                                <h4>Prix Total:</h4>
+                                <p class="paragraph-site">3700 fcfa</p>
+                            </div>
+                            <div class="box-btn">
+                                <a href="#"><button class="btn-standard --green">Payer</button></a>
+                                <a href="#"><button class="btn-standard --blue">Payer pour un tiers</button></a>
+                                <a href="#"><button class="btn-standard --blue-light">Demander à un tiers de payer</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- button top -->
+    <div class="button-return" id="btnReturn" hidden>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+    
+
+    <!-- script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- datatable -->
+    <script src="js/datatable/datatable.advanced.js"></script>
+    <script src="js/datatable/datatable.basic.js"></script>
+    <script src="js/datatable/datatable.init.js"></script>
+    <script src="js/datatable/datatable.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#table1').DataTable();
+        } );
+    </script>
+</body>
+</html>

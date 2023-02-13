@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-cel-copy.png" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__logo">
+            <img src="../images/logo-cel.png" alt="logo site" class="img-fluid" />
+        </div>
+        <ul class="sidebar__box-link">
+            <li>
+                <a href="index.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/home.svg" alt="home">
+                        </span>
+                        <span class="title">Tableau de bord</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="composition.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/compo.svg" alt="compo">
+                        </span>
+                        <span class="title">Composition</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="examen.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/compo.svg" alt="compo">
+                        </span>
+                        <span class="title">Examen</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="distinction.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/distinction.svg" alt="distinction">
+                        </span>
+                        <span class="title">Distinction</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="compte.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/account.svg" alt="account">
+                        </span>
+                        <span class="title">Compte CELPAY</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="demande.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/demande.svg" alt="demande">
+                        </span>
+                        <span class="title">Faire une demande</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="conversation.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/chat.svg" alt="tchat">
+                        </span>
+                        <span class="title">CELChat</span>
+                    </div>
+                </a>
+            </li>
+            <li class="active">
+                <a href="document.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/documents.svg" alt="documents">
+                        </span>
+                        <span class="title">Documents</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+
+        <!-- top bar -->
+        <div class="page-wrapper__topbar">
+            <div class="page-wrapper__topbar--btn" onclick="toggleSidebar()">
+                <img src="../images/menu.svg" alt="sidebar btn" class="iconOpen">
+                <img src="../images/close.svg" alt="sidebar btn" class="iconClose">
+            </div>
+            <div class="page-wrapper__topbar--linkRight">
+                <div class="language">
+                    <img src="../images/fr.svg" alt="fr" id="imageBox">
+                    <div class="box-lang">
+                        <div class="box-lang__item">
+                            <div class="logo-drapeau">
+                                <img src="../images/fr.svg" alt="fr" onclick="changeLanguage(this)">
+                            </div>
+                            <span class="language-country" onclick="addIcon(this)">Français</span>
+                        </div>
+                        <div class="box-lang__item">
+                            <span class="logo-drapeau">
+                                <img src="../images/gb.svg" alt="en" onclick="changeLanguage(this)">
+                            </span>
+                            <span class="language-country" onclick="addIcon(this)">Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="notification.html">
+                    <div class="notification">
+                        <div class="account">50</div>
+                        <img src="../images/notify.svg" alt="">
+                    </div>
+                </a>
+                <div class="box-user">
+                    <span class="name">Elidje Hoba Nick Jefferson</span>
+                    <div class="user">
+                        <img src="../images/user_image1.png" alt="photo">
+                    </div>
+                    <div class="user-link">
+                        <a href="profil.html" class="link"><i class="fa fa-user" aria-hidden="true"></i>Profil</a>
+                        <a href="update-profil.html" class="link"><i class="fa fa-cogs" aria-hidden="true"></i>Paramètre</a>
+                        <a href="#" class="link"><i class="fa fa-globe" aria-hidden="true"></i>Aller sur le site</a>
+                        <hr class="underline" />
+                        <a href="#" class="link"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page content -->
+        <div class="page-wrapper__page-content">
+            <div class="main-content">
+                <div class="releve-note">
+                    <div class="dash-heading mb-5">
+                        <ul class="my-breadcrumb">
+                            <li><a href="index.html">Tableau de bord</a></li>
+                            <li class="spacing">&#8722;</li>
+                            <li><span>Documents</span></li>
+                        </ul>
+                        <h3 class="title">Documents</h3>
+                    </div>
+                    <hr class="underline">
+                    <div class="box-form-doc">
+                        <h3 class="title">Rélévé de note</h3>
+                        <form action="" class="form-row form-doc">
+                            <div class="col-12 col-md-6">
+                                <div class="form--group">
+                                    <label for="annee">Année Academique</label>
+                                    <select class="custom-select form--group__select" id="annee">
+                                        <option selected>Sélectionnez une année</option>
+                                        <option value="v1">2021 - 2022</option>
+                                        <option value="v2">2020 - 2021</option>
+                                        <option value="v2">2019 - 2020</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form--group">
+                                    <label for="niveau">Niveau d'etude</label>
+                                    <select class="custom-select form--group__select" id="niveau">
+                                        <option selected>Sélectionnez une année</option>
+                                        <option value="v1"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p class="paragraph --red mb-5">NB: Pour télécharger votre relevé de note, veuillez cliquer sur le bouton "Télécharger", ci-dessous.</p>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-standard-2">Afficher</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box-releve">
+                        <p class="paragraph">Espace pour le rélévé de note</p>
+
+                        <!-- btn download -->
+                        <div class="btn-download">
+                            <a href="#" target="_blank">
+                                <button class="btn-standard-3">
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                    Télécharger
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- script -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

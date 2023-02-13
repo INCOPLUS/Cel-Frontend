@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo-cel-copy.png" type="image/x-icon">
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/main-prof.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+
+</head>
+<body class="body">
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar__logo">
+            <img src="../images/logo-cel.png" alt="logo site" class="img-fluid" />
+        </div>
+        <ul class="sidebar__box-link">
+            <li>
+                <a href="index.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/home.svg" alt="home">
+                        </span>
+                        <span class="title">Tableau de bord</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="gestion-sujet.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/gestion.svg" alt="gestion">
+                        </span>
+                        <span class="title">Gestion des sujets</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="gestion-oraux.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/gestion.svg" alt="gestion">
+                        </span>
+                        <span class="title">Gestions des oraux</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="gestion-cours.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/gestion.svg" alt="gestion">
+                        </span>
+                        <span class="title">Gestions des cours</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="emploi-du-temps.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/calendar.svg" alt="calendar">
+                        </span>
+                        <span class="title">Emploi du temps</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="compte.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/account.svg" alt="account">
+                        </span>
+                        <span class="title">Compte CELPAY</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="demande.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/demande.svg" alt="demande">
+                        </span>
+                        <span class="title">Faire une demande</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="tutoriel.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/tutorial.svg" alt="tutorial">
+                        </span>
+                        <span class="title">Tutoriels / Docs</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="conversation.html">
+                    <div class="menu_item">
+                        <span class="icon">
+                            <img src="../images/chat.svg" alt="tchat">
+                        </span>
+                        <span class="title">CELChat</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+
+        <!-- top bar -->
+        <div class="page-wrapper__topbar">
+            <div class="page-wrapper__topbar--btn" onclick="toggleSidebar()">
+                <img src="../images/menu.svg" alt="sidebar btn" class="iconOpen">
+            </div>
+            <div class="page-wrapper__topbar--linkRight">
+                <div class="language">
+                    <img src="../images/fr.svg" alt="fr" id="imageBox">
+                    <div class="box-lang">
+                        <div class="box-lang__item">
+                            <div class="logo-drapeau">
+                                <img src="../images/fr.svg" alt="fr" onclick="changeLanguage(this)">
+                            </div>
+                            <span class="language-country" onclick="addIcon(this)">Français</span>
+                        </div>
+                        <div class="box-lang__item">
+                            <span class="logo-drapeau">
+                                <img src="../images/gb.svg" alt="en" onclick="changeLanguage(this)">
+                            </span>
+                            <span class="language-country" onclick="addIcon(this)">Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="notification.html">
+                    <div class="notification">
+                        <div class="account">12</div>
+                        <img src="../images/notify.svg" alt="">
+                    </div>
+                </a>
+                <div class="box-user">
+                    <span class="name">Adeko jean nevry</span>
+                    <div class="user">
+                        <img src="../images/user_image1.png" alt="photo">
+                    </div>
+                    <div class="user-link">
+                        <a href="profil.html" class="link"><i class="fa fa-user" aria-hidden="true"></i>Profil</a>
+                        <a href="update-profil.html" class="link"><i class="fa fa-cogs" aria-hidden="true"></i>Paramètre</a>
+                        <a href="#" class="link"><i class="fa fa-globe" aria-hidden="true"></i>Aller sur le site</a>
+                        <hr class="underline" />
+                        <a href="#" class="link"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page content -->
+        <div class="page-wrapper__page-content">
+            <div class="main-content">
+                <div class="profil">
+                    <div class="dash-heading mb-5">
+                        <ul class="my-breadcrumb">
+                            <li><a href="index.html">Tableau de bord</a></li>
+                            <li class="spacing">&#8722;</li>
+                            <li><span>Distinctions</span></li>
+                        </ul>
+                        <h3 class="title">Distinctions</h3>
+                    </div>
+                    <div class="box-distinction">
+                        <!-- tabs -->
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tabs1-tab" data-toggle="pill" href="#tabs1" role="tab" aria-controls="tabs1" aria-selected="true">&#10070; Tableaux d'honneur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tabs2-tab" data-toggle="pill" href="#tabs2" role="tab" aria-controls="tabs2" aria-selected="false">&#10070; Challenges</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tabs3-tab" data-toggle="pill" href="#tabs3" role="tab" aria-controls="tabs3" aria-selected="false">&#10070; Prix remportés</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tabs4-tab" data-toggle="pill" href="#tabs4" role="tab" aria-controls="tabs4" aria-selected="false">&#10070; Examens réussis</a>
+                            </li>
+                        </ul>
+
+                        <!-- content -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- tableau d'honneur -->
+                            <div class="tab-pane fade show active" id="tabs1" role="tabpanel" aria-labelledby="tabs1-tab">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Text d'encouragement</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur, 
+                                                        fuga soluta architecto fugiat animi, temporibus optio dignissimos nihil 
+                                                        amet quia repellat dolores non accusamus. Alias laudantium distinctio quod tempora.
+                                                    </p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne</h3>
+                                                    <p class="paragraph">17.55</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Année Académique</h3>
+                                                    <p class="paragraph">2020 - 2021</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Distinctions</h3>
+                                                    <p class="paragraph">
+                                                        Tableau d'honneur + Encouragement + Felicitation
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Text d'encouragement</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur, 
+                                                        fuga soluta architecto fugiat animi, temporibus optio dignissimos nihil 
+                                                        amet quia repellat dolores non accusamus. Alias laudantium distinctio quod tempora.
+                                                    </p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne</h3>
+                                                    <p class="paragraph">17.55</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Année Académique</h3>
+                                                    <p class="paragraph">2020 - 2021</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Distinctions</h3>
+                                                    <p class="paragraph">
+                                                        Tableau d'honneur + Encouragement + Felicitation
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Text d'encouragement</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut aspernatur, 
+                                                        fuga soluta architecto fugiat animi, temporibus optio dignissimos nihil 
+                                                        amet quia repellat dolores non accusamus. Alias laudantium distinctio quod tempora.
+                                                    </p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne</h3>
+                                                    <p class="paragraph">17.55</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Année Académique</h3>
+                                                    <p class="paragraph">2020 - 2021</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Distinctions</h3>
+                                                    <p class="paragraph">
+                                                        Tableau d'honneur + Encouragement + Felicitation
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="my-pagination mt-5">
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                        <div class="number">
+                                            <span><a href="#" class="active">1</a></span>
+                                            <span><a href="#">2</a></span>
+                                            <span>...</span>
+                                            <span><a href="#">6</a></span>
+                                        </div>
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- challenges (defis) -->
+                            <div class="tab-pane fade" id="tabs2" role="tabpanel" aria-labelledby="tabs2-tab">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Matière</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Français</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez rélévé le défis avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Note</h3>
+                                                    <p class="paragraph">17/20</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Temps mis</h3>
+                                                    <p class="paragraph">10min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Matière</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Français</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez rélévé le défis avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Note</h3>
+                                                    <p class="paragraph">17/20</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Temps mis</h3>
+                                                    <p class="paragraph">10min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Matière</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Français</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez rélévé le défis avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Note</h3>
+                                                    <p class="paragraph">17/20</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Temps mis</h3>
+                                                    <p class="paragraph">10min</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="my-pagination mt-5">
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                        <div class="number">
+                                            <span><a href="#" class="active">1</a></span>
+                                            <span><a href="#">2</a></span>
+                                            <span>...</span>
+                                            <span><a href="#">6</a></span>
+                                        </div>
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- prix remporté -->
+                            <div class="tab-pane fade" id="tabs3" role="tabpanel" aria-labelledby="tabs3-tab">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Catégorie</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Meilleur éléve de sa promotion</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Récompense obtenue</h3>
+                                                    <p class="paragraph">Bonus de 25.000 Fcfa sur CELPAY</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne générale obtenue</h3>
+                                                    <p class="paragraph">18.25/20</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Catégorie</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Meilleur éléve de sa promotion</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Récompense obtenue</h3>
+                                                    <p class="paragraph">Bonus de 25.000 Fcfa sur CELPAY</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne générale obtenue</h3>
+                                                    <p class="paragraph">18.25/20</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Catégorie</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Meilleur éléve de sa promotion</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Classe</h3>
+                                                    <p class="paragraph">Terminale D</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Récompense obtenue</h3>
+                                                    <p class="paragraph">Bonus de 25.000 Fcfa sur CELPAY</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Moyenne générale obtenue</h3>
+                                                    <p class="paragraph">18.25/20</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="my-pagination mt-5">
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                        <div class="number">
+                                            <span><a href="#" class="active">1</a></span>
+                                            <span><a href="#">2</a></span>
+                                            <span>...</span>
+                                            <span><a href="#">6</a></span>
+                                        </div>
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- examen reussis -->
+                            <div class="tab-pane fade" id="tabs4" role="tabpanel" aria-labelledby="tabs4-tab">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Type</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Examen Blanc</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Matière</h3>
+                                                    <p class="paragraph">Anglais</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez réussis l'examen avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Points</h3>
+                                                    <p class="paragraph">170/200</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Type</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Examen Blanc</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Matière</h3>
+                                                    <p class="paragraph">Anglais</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez réussis l'examen avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Points</h3>
+                                                    <p class="paragraph">170/200</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="card-distinction">
+                                                <div class="content-th">
+                                                    <div class="top">
+                                                        <h3 class="title mb-3">Type</h3>
+                                                        <div class="partage">
+                                                            <div class="text-partage">Partager</div>
+                                                            <i class="fa fa-share-alt btn-partage" aria-hidden="true"></i>
+                                                            <div class="box-link-partage">
+                                                                <a href="#">
+                                                                    <div class="icone --facebook">
+                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --instagram">
+                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --whatsapp">
+                                                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="#">
+                                                                    <div class="icone --chat">
+                                                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="paragraph">Examen Blanc</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Matière</h3>
+                                                    <p class="paragraph">Anglais</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <p class="paragraph">Vous avez réussis l'examen avec succès</p>
+                                                </div>
+                                                <div class="content-th">
+                                                    <h3 class="title mb-3">Points</h3>
+                                                    <p class="paragraph">170/200</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div class="my-pagination mt-5">
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                        <div class="number">
+                                            <span><a href="#" class="active">1</a></span>
+                                            <span><a href="#">2</a></span>
+                                            <span>...</span>
+                                            <span><a href="#">6</a></span>
+                                        </div>
+                                        <a href="#" class="btn-prev-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- script -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        // script img preview
+
+           function readURL(input) {
+               if (input.files && input.files[0]) {
+                   var reader = new FileReader();
+                   reader.onload = function (e) {
+                       $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                       $('#imagePreview').hide();
+                       $('#imagePreview').fadeIn(650);
+                   }
+                   reader.readAsDataURL(input.files[0]);
+               }
+           }
+           $("#imageUpload").change(function () {
+               readURL(this);
+           });
+   </script>
+</body>
+</html>
